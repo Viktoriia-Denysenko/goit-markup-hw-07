@@ -1,0 +1,102 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $secondary-bgc;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address {
+  margin-right: 70px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address__list {
+  @extend %list;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link--location {
+  @extend %address-link, %link;
+
+  color: $light-text-color;
+}
+
+.address__link--contacts {
+  @extend %address-link, %link;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms $main-cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.footer__media {
+  margin-right: 93px;
+}
+
+.footer__title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $light-text-color;
+}
+
+.footer-form__slogan {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+  color: $light-text-color;
+}
+
+.footer-form__wrapper {
+  display: flex;
+}
+
+.footer-form__input {
+  min-width: 358px;
+  margin-right: 12px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $secondary-bgc;
+  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form__btn {
+  padding: 10px 20px 10px 28px;
+}
+
+.footer-form__icon {
+  margin-left: 10px;
+  vertical-align: middle;
+}

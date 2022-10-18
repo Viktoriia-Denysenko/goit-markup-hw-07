@@ -1,0 +1,21 @@
+.button {
+  @extend %button;
+
+  display: block;
+  min-width: 200px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  color: $light-text-color;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms $main-cubic-bezier;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn-color;
+  }
+}
